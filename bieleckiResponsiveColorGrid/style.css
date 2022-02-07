@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+    }
+
+
+#div1{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #F5C6D6;
+    border: 5px solid white;
+        
+}
+#div2{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #EE2E84;
+    border: 5px solid white;
+}
+#div3{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #EE2E84;
+    border: 5px solid white;
+}
+#div4{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #EE2E84;
+    border: 5px solid white;
+}
+#div5{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #EE2E84;
+    border: 5px solid white;
+}
+#div6{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #85CFD8;
+    border: 5px solid white;
+}
+#div7{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #85CFD8;
+    border: 5px solid white;
+}
+#div8{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #8DC63F;
+    border: 5px solid white;
+}
+#div9{
+    display: block; 
+    width: 100%;
+    height: 10vh;
+    background-color: #E76E34;
+    border: 5px solid white;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    #div1{
+        display: inline-block; 
+        width: 100%;
+        height: 25vh;
+        background-color: #F5C6D6;
+        border: 5px solid white;
+            
+    }
+    #div2{
+        display: inline-block; 
+        width: 25%;
+        height: 25vh;
+        background-color: #EE2E84;
+        border: 5px solid white;
+    }
+    #div3{
+        display: inline-block; 
+        width: 25%;
+        height: 25vh;
+        background-color: #EE2E84;
+        border: 5px solid white;
+    }
+    #div4{
+        display: inline-block; 
+        width: 25%;
+        height: 25vh;
+        background-color: #EE2E84;
+        border: 5px solid white;
+    }
+    #div5{
+        display: inline-block; 
+        width: 25%;
+        height: 25vh;
+        background-color: #EE2E84;
+        border: 5px solid white;
+    }
+    #div6{
+        display: inline-block; 
+        width: 50%;
+        height: 25vh;
+        background-color: #85CFD8;
+        border: 5px solid white;
+    }
+    #div7{
+        display: inline-block; 
+        width: 50%;
+        height: 25vh;
+        background-color: #85CFD8;
+        border: 5px solid white;
+    }
+    #div8{
+        display: inline-block; 
+        width: 75%;
+        height: 25vh;
+        background-color: #8DC63F;
+        border: 5px solid white;
+    }
+    #div9{
+        display: inline-block; 
+        width: 25%;
+        height: 25vh;
+        background-color: #E76E34;
+        border: 5px solid white;
+    }
+    
+}

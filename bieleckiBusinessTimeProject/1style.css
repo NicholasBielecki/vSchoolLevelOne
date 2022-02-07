@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(184, 184, 184);
+}
+p{
+    color: green;
+}
+
+#navBar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 5px solid orange;
+    padding: 2px;
+    margin: 5px;
+    z-index: 10;
+}
+
+#welcome{
+    position: relative; top: 50px;
+    width: 100%;
+    margin: 2px;
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;        
+}
+
+#para1{
+    position: relative; top: 50px;
+    width: 75vh;
+    margin: 5px;
+    }
+#mainImage{
+    position: relative; top: 50px;
+    height: 100%;
+    width: 100%;
+       }
+    #footer{
+        color: brown;
+        position: relative; top: 50px;
+        display: flex;
+        flex-direction: column;        
+              }

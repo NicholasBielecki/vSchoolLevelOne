@@ -1,0 +1,31 @@
+.parent{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(20, 1fr);
+    }
+.div1{
+    background-color: red;
+    display: flex; height: 10vh;
+    grid-column: 1/10;
+    
+    }
+.div2{
+    background-color: blue;
+    display: flex; height: 10vh;
+    grid-column: 11/21;
+}
+.div3{
+    background-color: green;
+    display: flex; height: 10vh;
+    grid-column: 1/4;
+}
+.div4{
+    background-color: purple;
+    display: flex; height: 10vh;
+    grid-column: 5/21;
+}
+.div5{
+    background-color: yellow;
+    display: flex; height: 10vh;
+    grid-column: 1/21;
+}
