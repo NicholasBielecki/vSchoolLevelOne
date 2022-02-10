@@ -1,0 +1,169 @@
+.body{
+    padding: 0%;
+    margin: 0%
+}
+
+.france{
+    display: grid; height: 200px; width: 300px;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    margin: 10px;
+    
+}
+.france1{
+    grid-column: 1/2; 
+    background-color: #002495; 
+}
+.france2{
+    background-color: #FFFFFF;
+    grid-column: 2/3;     
+}
+.france3{
+    background-color: #ED2938;
+    grid-column: 3/4; 
+} 
+
+.germany{
+    display: grid; height: 200px; width: 333px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    margin: 10px;
+}
+.germany1{
+    background-color: black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.germany2{
+ background-color: red;
+ grid-column: 1/2;
+ grid-row: 2/3;
+}
+.germany3{
+    background-color: yellow;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.madagascar{
+    display: grid; height: 200px; width: 300px;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr,1fr;
+    margin: 10px;
+    border: 2px solid black;
+}
+.madagascar1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: white;
+}
+.madagascar2{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-color: red;
+}
+.madagascar3{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: green;
+}
+
+.switzerland{
+    display: grid; height: 200px; width: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin: 10px;
+}
+.switzerland1{
+    grid-row: 1/2;
+    background-color: red;
+    
+}
+.switzerland2{
+    grid-row: 2/3;
+    background-image: linear-gradient( to right, red 40%, white 40% 60%, red 60% 100%); 
+
+}
+.switzerland3{
+    grid-row: 3/4;
+    background-image: linear-gradient(to right, red 20%, white 20% 80%, red 80%);
+}
+.switzerland4{
+    grid-row: 4/5;
+    background-image: linear-gradient( to right, red 40%, white 40% 60%, red 60% 100%); 
+}
+.switzerland5{
+    grid-row: 5/6;
+    background-color: red;
+}
+
+.sweden{
+    display: grid; height: 200px; width: 320px;
+    grid-template-rows: repeat(6, 1fr);
+    margin: 10px;
+}
+.sweden1{
+    grid-row: 1/2;
+    background-image: linear-gradient(to right,blue 20%, yellow 20% 30%, blue 30%);
+}
+.sweden2{
+    grid-row: 2/3;
+    background-image: linear-gradient(to right,blue 20%, yellow 20% 30%, blue 30%);
+}
+.sweden3{
+    grid-row: 3/4;
+    background-color: yellow;
+    }
+.sweden4{
+    grid-row: 4/5;
+    background-image: linear-gradient(to right,blue 20%, yellow 20% 30%, blue 30%);
+}
+.sweden5{
+    grid-row: 5/6;
+    background-image: linear-gradient(to right,blue 20%, yellow 20% 30%, blue 30%);
+}
+
+.gambia{
+    display: grid; height: 200px; width: 300px;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    margin: 10px;
+    
+}
+.gambia1{
+    grid-row: 1/2;
+    background-color: red;
+}
+.gambia2{
+    grid-row: 2/3;
+    background-image: linear-gradient(to top, white 20%, blue 20% 80%, white 80% 100%);
+
+}
+.gambia3{
+    grid-row: 3/4;
+    background-color: green;
+}
+
+.japan{
+    display: grid; height: 200px; width: 300px;
+    background-image: radial-gradient( circle, red 20%, white 20% 100% );
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.niger{
+    display: grid; height: 200px; width: 300px;
+    margin: 10px;
+    border: 2px solid black;
+    grid-template-rows: 1fr, 1fr, 1fr;
+}
+.niger1{
+    grid-row: 1/2;
+    background-color: orange;
+}
+.niger2{
+    grid-row: 2/3;
+    background-image: radial-gradient(circle, orange 20%, white 20% 100%);
+}
+.niger3{
+    grid-row: 3/4;
+    background-color: green;
+}
