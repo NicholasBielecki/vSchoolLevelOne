@@ -10,17 +10,18 @@ if(answer === "2"){
 }
 else if(answer==="3"){
      console.log("You found the key");
-     door ++;
+     door ++ ;
+     
     var answer2 = readlineSync.question("You found the Key! Would you like to open the door? Y or N:")
     }
-else if(door === 0, answer ==="1" ){
+else if(door === 0 & answer ==="1" ){
     console.log("door wont open without key")
 }
 
 if (answer2 ==='N'){
     console.log('You sat around and died in the room')
 }
-if (door ===1, answer2 ==="Y"){
+if (door ===1 && answer2 ==="Y"){
     console.log ('It worked! The door opened!')
 }
 
