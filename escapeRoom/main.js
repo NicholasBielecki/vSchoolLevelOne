@@ -5,8 +5,15 @@ var door = 0;
 var answer = readlineSync.question('You wake up and are locked in a room. You have three choices. 1: Try to open the door 2: Put your hand in a hole in the wall to find the key. 3:Search the desk for a key......Enter the number of your choice');
 
 
+let isalive = true
+let haskey = false
+
+if (isalive = false){
+    console.log('you died')
+}
+
 if(answer === "2"){
-    console.log('You died')
+    isalive = false
 }
 else if(answer==="3"){
      console.log("You found the key");
