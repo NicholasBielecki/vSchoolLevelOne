@@ -24,6 +24,8 @@ form1.addEventListener("submit", function(event){
             else if(event.target.textContent === "save"){
                 let editInput = document.getElementById('inputBox2').value
                 console.log(editInput)
+                event.target.parentElement.textContent = editInput
+                   
                 createEdit.textContent = "edit"
             }               
             
