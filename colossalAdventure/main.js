@@ -1,3 +1,5 @@
+//KNOWN BUGS 1. Sometimes player health and enemy health both hit 0 at same time. This results in console logging that you killed it then died. This is due to the while loop having to make a complete cycle. 
+
 var readlineSync = require('readline-sync')
 //walking
 let walkCounter = 40
@@ -53,11 +55,12 @@ while(beingAttacked === true && isALIVE === true){
                              playerHealth -= Math.floor(Math.random() *3)
                              enemyHealth -= Math.floor(Math.random() *3)
                                  if(enemyHealth <= 0){
-                                     console.log("You killed it and now have:" + playerHealth + " health")
+                                    playerInventory.push(1)
+                                    console.log("You killed it and now have:" + playerHealth + " health and have been awarded a potion. You now have" + playerInventory.length + " potions")                                     
                                      beingAttacked = false
                                  }
                                  if(playerHealth <= 0){
-                                     console.log("You died")
+                                     console.log("This is a cool death message to let you know you died")
                                     isALIVE=false
                                      
                                  }
@@ -73,11 +76,12 @@ while(beingAttacked === true && isALIVE === true){
                         playerHealth -= Math.floor(Math.random() *3)
                         enemyHealth -= Math.floor(Math.random() *3)
                             if(enemyHealth <= 0){
-                                console.log("You killed it and now have:" + playerHealth + " health")
+                                playerInventory.push(1)
+                                console.log("You killed it and now have:" + playerHealth + " health and have been awarded a potion. You now have" + playerInventory.length + " potions")
                                 beingAttacked = false
                             }
                             if(playerHealth <= 0){
-                                console.log("You died")
+                                console.log("This is a cool death message to let you know you died")
                                 isALIVE=false
                                
                             }
@@ -85,17 +89,29 @@ while(beingAttacked === true && isALIVE === true){
         }          
                 
 }
-
+//potion time
     if(startStop === false && isALIVE === true){
-        let instructions = readlineSync.keyIn("Press w to continue walking")
+        let instructions = readlineSync.keyIn("Press w to continue walking or press p to use a potion and restore 1 health. You have" + playerInventory.length + " potions left")
         if(instructions === "w"){
             startStop = true
+        }
+        if(instructions === "p"){
+            if(playerInventory<=0){
+                console.log("You dont have anymore potions and must continue walking")
+                startStop=true
+            }
+            else{
+                playerInventory.pop()
+                playerHealth ++
+                console.log("Your health is now " + playerHealth + " and you have " + playerInventory + " potions left")
+                startStop=true
+            }
         }
     }
     
 }
 if(walkCounter === 0){
-    console.log("Congrats, you won!")
+    console.log("Congrats" + name + "you won!")
 }
 
 }
